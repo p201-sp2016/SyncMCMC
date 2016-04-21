@@ -288,11 +288,11 @@ if plot_traces is True:
 
 
 # Print results
-print "F_v = %s" % F_mcmc
-print "v_a = %s" % va_mcmc
-print "v_m = %s" % vm_mcmc
+print("F_v = %s" % F_mcmc)
+print("v_a = %s" % va_mcmc)
+print("v_m = %s" % vm_mcmc)
 
-print "Log Likelihood = %s" %lnlike([F_mcmc,va_mcmc,vm_mcmc,lnf_mcmc], freqs, flux, error)
+print("Log Likelihood = %s" %lnlike([F_mcmc,va_mcmc,vm_mcmc,lnf_mcmc], freqs, flux, error))
 
 v_range = np.linspace(1E9,350E9,1E4)
 plt.figure()
